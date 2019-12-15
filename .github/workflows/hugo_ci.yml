@@ -1,6 +1,6 @@
 name: Hugo test
 
-on: [push, pull-request]:
+on: [push, pull-request]
   branches: source
 
 jobs:
