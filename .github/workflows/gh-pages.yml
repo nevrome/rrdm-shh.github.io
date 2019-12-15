@@ -5,8 +5,6 @@ on:
     branches:
     - source
 
-PUBLISH_BRANCH: master
-
 jobs:
   build-deploy:
     runs-on: ubuntu-18.04
@@ -28,5 +26,5 @@ jobs:
       uses: peaceiris/actions-gh-pages@v2
       env:
         ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-        PUBLISH_BRANCH: gh-pages
+        PUBLISH_BRANCH: master
         PUBLISH_DIR: ./public
